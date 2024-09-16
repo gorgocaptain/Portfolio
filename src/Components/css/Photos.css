@@ -1,0 +1,18 @@
+/* Aurora effect for background */
+.aurora-two {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 350vh;
+    background: radial-gradient(circle, rgb(61, 0, 0) 0%, rgb(88, 2, 2) 60%, rgb(223, 116, 30) 100%);
+    background-size: cover;
+    z-index: -1;
+    filter: blur(8px);
+    opacity: 0.9;
+  }
+  
+
+  
+
+  

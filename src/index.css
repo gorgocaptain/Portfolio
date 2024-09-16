@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Aurora with Independent Circle Movements */
+.aurora {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: none;
+  overflow: hidden;
+}
+
+.aurora::before, .aurora::after, .aurora div, .aurora .extra1, .aurora .extra2 {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+/* First Circle Animation */
+.aurora::before {
+  background: radial-gradient(circle at 50% 50%, rgba(100, 255, 218, 0.3), transparent 10%);
+  animation: aurora-animation-1 20s ease-in-out infinite alternate;
+}
+
+/* Second Circle Animation */
+.aurora::after {
+  background: radial-gradient(circle at 30% 70%, rgba(255, 100, 149, 0.6), transparent 10%);
+  animation: aurora-animation-2 25s ease-in-out infinite alternate;
+}
+
+/* Third Circle Animation */
+.aurora div {
+  background: radial-gradient(circle at 70% 20%, rgba(149, 100, 255, 0.45), transparent 10%);
+  animation: aurora-animation-3 30s ease-in-out infinite alternate;
+}
+
+/* Fourth Circle - Green Glow */
+.aurora .extra1 {
+  background: radial-gradient(circle at 40% 60%, rgba(100, 255, 150, 0.4), transparent 10%);
+  animation: aurora-animation-4 18s ease-in-out infinite alternate;
+}
+
+/* Fifth Circle - Blue Glow */
+.aurora .extra2 {
+  background: radial-gradient(circle at 80% 40%, rgba(100, 180, 255, 0.35), transparent 21%);
+  animation: aurora-animation-5 22s ease-in-out infinite alternate;
+}
+
+/* Animation for the First Circle */
+@keyframes aurora-animation-1 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(-20%, 15%) scale(1.1);
+  }
+  50% {
+    transform: translate(30%, -10%) scale(1.3);
+  }
+  75% {
+    transform: translate(-10%, 20%) scale(1.2);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+/* Animation for the Second Circle */
+@keyframes aurora-animation-2 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(15%, -20%) scale(1.3);
+  }
+  50% {
+    transform: translate(-30%, 25%) scale(1.4);
+  }
+  75% {
+    transform: translate(20%, -10%) scale(1.1);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+/* Animation for the Third Circle */
+@keyframes aurora-animation-3 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(-25%, 20%) scale(1.5);
+  }
+  50% {
+    transform: translate(40%, -30%) scale(1.7);
+  }
+  75% {
+    transform: translate(-15%, 30%) scale(1.3);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+/* Animation for the Fourth Circle */
+@keyframes aurora-animation-4 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(-30%, 10%) scale(1.2);
+  }
+  50% {
+    transform: translate(35%, -15%) scale(1.4);
+  }
+  75% {
+    transform: translate(-15%, 25%) scale(1.1);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+/* Animation for the Fifth Circle */
+@keyframes aurora-animation-5 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(10%, -30%) scale(1.3);
+  }
+  50% {
+    transform: translate(-25%, 30%) scale(1.5);
+  }
+  75% {
+    transform: translate(20%, -20%) scale(1.2);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -162,6 +162,12 @@ function Landing() {
                 <span>Escape The Lab is a platformer game where you build structures to help the green guy escape a dangerous laboratory.</span>
               </div>
             </a>
+            <a href="https://devpost.com/software/momentum-ai" target="_blank" ref={el => cardsRef.current[7] = el}>
+              <div className="card-content fade-in">
+                <h2>Momentum AI</h2>
+                <span>Build and sustain momentum while learning.</span>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -173,9 +179,7 @@ function Landing() {
         <div className="hor">
           <a href="https://www.instagram.com/george_big_money1" target="_blank" >Send me a DM! <AiOutlineInstagram /></a>
         </div>
-        <div className="hor">
-          <a>Email me! <AiOutlineMail /></a>
-        </div>
+        
       </div>
     </div>
   );

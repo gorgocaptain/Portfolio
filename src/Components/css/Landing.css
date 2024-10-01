@@ -51,7 +51,7 @@ p {
   text-shadow: none;
   border: rgb(0, 0, 0) 3px solid;
   border-radius: 10px;
-  transition: .7s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 
@@ -190,7 +190,7 @@ h1 {
 }
 
 .card-container > a {
-  flex: 0 0 100px;
+  flex: 0 0 50px;
   border-radius: 0.5rem;
   transition: 0.5s ease-in-out;
 
@@ -231,6 +231,9 @@ h1 {
 
 .card-container > a:nth-of-type(8) {
   background: url("./ETL.png") no-repeat 50% / cover;
+}
+.card-container > a:nth-of-type(9) {
+  background: url("./Momentum.png") no-repeat 50% / cover;
 }
 
 .card-content {
@@ -299,9 +302,7 @@ h4{
   
 }
 
-p:hover{
-  padding: 25px;
-}/* Nuke Button Styling */
+
 .nuke-button {
  position: sticky;
  top: 700px;

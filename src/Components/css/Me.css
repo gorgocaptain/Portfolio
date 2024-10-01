@@ -1,0 +1,119 @@
+.left-container {
+    margin-left: 6rem;
+    margin-top: -40px;
+    display: flex;
+}
+
+#me-about {
+    width: 650px;
+}
+
+.cool {
+    width: 500px;
+    height: 500px;
+    margin-left: 100px;
+    margin-top: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-wrapper {
+    width: 300px;
+    height: 200px;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.21);
+    border: 1px solid rgba(240, 248, 255, 0.397);
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px black;
+    padding: 30px;
+    text-align: center;
+    filter: saturate(0%) brightness(50%);
+    margin: 20px;
+    transition: 0.2s;
+}
+
+.card-wrapper:hover {
+    filter: saturate(60%);
+    scale: 1.1;
+}
+
+h5 {
+    font-size: 40px;
+    color: white;
+    text-shadow: 4px 4px black;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.modal-overlay.show:hover {
+    opacity: 1;
+}
+
+.modal-content {
+    position: relative;
+    margin-top: 100px;
+    background: black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.584);
+    max-width: 500px;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.modal-content.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.modal-content button {
+    margin-top: 10px;
+    
+    background: #00000090;
+    box-shadow: 0px 0px 5px black;
+    color: white;
+    border: none;
+ 
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+.modal-image {
+    width: 500px;
+    height: 200px;
+    object-fit: cover;
+}
+
+#desc {
+    background-color: none;
+    box-shadow: none;
+    border: none;
+    width: 450px;
+    font-size: 16px;
+}
+
+.modal-header {
+    margin-left: 20px;
+}
+

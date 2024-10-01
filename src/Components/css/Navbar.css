@@ -9,6 +9,7 @@
   z-index: 100000;
   font-family: "Merriweather", serif;
   width: 100%; /* Make navbar full-width */
+  margin-left: -25px;
 }
 
 .navbar::before {

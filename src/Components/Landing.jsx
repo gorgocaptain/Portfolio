@@ -68,7 +68,7 @@ function Landing() {
 
 
   return (
-   
+   <>
       <Navbar />
 
      
@@ -177,7 +177,7 @@ function Landing() {
         </div>
         
       </div>
-    
+      </>
   );
 }
 

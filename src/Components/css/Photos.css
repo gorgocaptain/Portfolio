@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 110vh;
+    height: 205vh;
     background: radial-gradient(circle, rgb(43, 0, 61) 0%, rgb(41, 42, 57) 60%, rgb(60, 74, 82) 100%);
     background-size: cover;
     z-index: -1;

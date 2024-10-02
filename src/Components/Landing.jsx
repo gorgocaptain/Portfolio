@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import { AiFillInstagram, AiOutlineInstagram, AiOutlineMail } from "react-icons/ai";
+import { AiFillBank, AiFillDownCircle, AiFillInstagram, AiFillLinkedin, AiOutlineGithub, AiOutlineInstagram, AiOutlineLinkedin, AiOutlineMail, AiOutlineSound } from "react-icons/ai";
 import "./css/Landing.css";
 import Navbar from "./Navbar.jsx";
 import Picone from "../Images/Picone.jpg";
@@ -74,8 +74,16 @@ function Landing() {
      
       <div className="first">
         <div className="des-container fade-in">
-          <h1 className="main">George Big Money</h1>
-          <p id="des">I’m GBM. This is my website. Here you can find a portfolio of my tech projects, photos, and music. I developed these skills during high school and I’m very passionate about them!</p>
+          <h1 className="main">George Florea</h1>
+          <p id="des">I’m George. This is my website. Here you can find a portfolio of my tech projects, photos, and music. I developed these skills during high school and I’m very passionate about them!</p>
+          <div className="des-container" id="icons">
+          <a href="https://www.instagram.com/george_big_money1" target="_blank" ><AiOutlineInstagram /></a>
+          <a href="mailto:gorgocaptain@gmail.com" target="_blank" ><AiOutlineMail /></a>
+          <a href="https://ca.linkedin.com/in/george-florea-237499312" target="_blank" ><AiOutlineLinkedin /></a>
+          <a href="https://github.com/gorgocaptain" target="_blank" ><AiOutlineGithub /></a>
+          <a href="https://devpost.com/gorgocaptain?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" target="_blank" ><AiFillBank /></a>
+          <a href="https://soundcloud.com/user-340622320" target="_blank" ><AiOutlineSound /></a>
+          </div>
         </div>
         <div
           className="picone-container fade-in"

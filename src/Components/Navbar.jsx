@@ -6,10 +6,12 @@ function Navbar() {
   const colors = ["#9564ff75", "#ff64959a", "#64ffdacc"];
   const [boxShadowColors, setBoxShadowColors] = useState({
     beats: "rgb(255, 255, 255)",
-    Posts : "rgb(255, 255, 255)",
+    Posts: "rgb(255, 255, 255)",
     Me: "rgb(255, 255, 255)",
-    contact: "rgb(255, 255, 255)"
+    contact: "rgb(255, 255, 255)",
   });
+  
+  const [isOpen, setIsOpen] = useState(false);
 
   const getRandomColor = () => colors[Math.floor(Math.random() * colors.length)];
 
@@ -27,9 +29,14 @@ function Navbar() {
     }));
   };
 
+  const toggleMenu = () => setIsOpen(!isOpen);
+
   return (
     <nav className="navbar">
-      <ul className="navbar-menu">
+      <div className="hamburger" onClick={toggleMenu}>
+        &#9776;
+      </div>
+      <ul className={`navbar-menu ${isOpen ? "active" : ""}`}>
         <div className="left-side">
           {["beats", "Posts"].map((link) => (
             <li key={link}>
@@ -44,12 +51,12 @@ function Navbar() {
             </li>
           ))}
         </div>
-          <div className="center-container">
-        <li className="center-item">
-          <Link to="/" id="lols" style={{ boxShadow: "none" }}>
-            <div className="top">BIG MONEY</div>
-          </Link>
-        </li>
+        <div className="center-container">
+          <li className="center-item">
+            <Link to="/" id="lols" style={{ boxShadow: "none" }}>
+              <div className="top">BIG MONEY</div>
+            </Link>
+          </li>
         </div>
         <div className="right-side">
           {["Me", "contact"].map((link) => (

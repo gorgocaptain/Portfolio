@@ -99,11 +99,27 @@ import MoneyTrees from "./css/Beats/moneytrees.mp3";
 import Talk from "./css/Beats/Talk.mp3";
 import Summertime from "./css/Beats/summertime2.mp3";
 
+import NoWayImage from "./css/BeatImages/nowaycool.png";
+import NoWay from "./css/Beats/nowaycool.mp3";
 
+import MrWestImage from "./css/BeatImages/mrwest2.png";
+import MrWest from "./css/Beats/west.mp3";
 
+import GhostsImage from "./css/BeatImages/ghosts2.png";
+import Ghosts from "./css/Beats/ghosts2.mp3";
 
+import JeevanImage from "./css/BeatImages/jeevan.png";
+import Jeevan from "./css/Beats/jeevanbeat.mp3";
+
+import HariImage from "./css/BeatImages/hari.png";
+import Hari from "./css/Beats/haribeat.mp3";
 function Beats() {
   const beats = [
+    { name: "Hari Type Beat", image: HariImage, audio: Hari},  
+    { name: "Jeevan Type Beat", image: JeevanImage, audio: Jeevan},       
+    { name: "Ghosts", image: GhostsImage, audio: Ghosts},  
+    { name: "Mr West", image: MrWestImage, audio: MrWest},       
+    { name: "No Way", image: NoWayImage, audio: NoWay },
     { name: "BMB", image: GBMALBUMIMAGE, audio: BMB},  
     { name: "HOT", image: GBMALBUMIMAGE, audio: Hot},       
     { name: "FILTHY", image: GBMALBUMIMAGE, audio: Filthy},  

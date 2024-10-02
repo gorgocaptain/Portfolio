@@ -13,7 +13,7 @@ function Landing() {
   const piconeContainerRef = useRef(null);
   const pictwoContainerRef = useRef(null);
   const cardsRef = useRef([]);
-  const [nuked, setNuked] = useState(false); // Add state to track nuke effect
+ 
 
   const handleMouseMove = (e, containerRef) => {
     const container = containerRef.current;
@@ -65,12 +65,10 @@ function Landing() {
     });
   }, []);
 
-  const handleNuke = () => {
-    setNuked(true); // Trigger nuke effect by setting state
-  };
+
 
   return (
-    <div className={nuked ? "nuked-site" : ""}> {/* Apply nuked class if triggered */}
+   
       <Navbar />
 
      
@@ -88,9 +86,7 @@ function Landing() {
           <img src={Picone} alt="Picone" className="picone" />
         </div>
       </div>
-      <button className="nuke-button" onClick={handleNuke}>
-        Nuke the Site!
-      </button>
+    
 
       <div className="center-container" id="who-am-i">
         <h1 className="glitch fade-in" data-text="Who am I?">Who am I?</h1>
@@ -181,7 +177,7 @@ function Landing() {
         </div>
         
       </div>
-    </div>
+    
   );
 }
 

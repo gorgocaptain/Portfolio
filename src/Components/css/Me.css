@@ -45,7 +45,8 @@
     padding: 30px;
     text-align: center;
     filter: saturate(0%) brightness(50%);
-    transition: 0.2s;
+    transition: 0.2s; 
+    margin-bottom: 20px;
 }
 
 /* Hover effect for cards */

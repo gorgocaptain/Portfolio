@@ -3,31 +3,10 @@ import { Link } from "react-router-dom";
 import "./css/Navbar.css";
 
 function Navbar() {
-  const colors = ["#9564ff75", "#ff64959a", "#64ffdacc"];
-  const [boxShadowColors, setBoxShadowColors] = useState({
-    beats: "rgb(255, 255, 255)",
-    Posts: "rgb(255, 255, 255)",
-    Me: "rgb(255, 255, 255)",
-    contact: "rgb(255, 255, 255)",
-  });
   
   const [isOpen, setIsOpen] = useState(false);
 
-  const getRandomColor = () => colors[Math.floor(Math.random() * colors.length)];
 
-  const handleMouseEnter = (linkName) => {
-    setBoxShadowColors((prevColors) => ({
-      ...prevColors,
-      [linkName]: getRandomColor(),
-    }));
-  };
-
-  const handleMouseLeave = (linkName) => {
-    setBoxShadowColors((prevColors) => ({
-      ...prevColors,
-      [linkName]: "rgb(255, 255, 255)",
-    }));
-  };
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -42,9 +21,8 @@ function Navbar() {
             <li key={link}>
               <Link
                 to={`/${link}`}
-                onMouseEnter={() => handleMouseEnter(link)}
-                onMouseLeave={() => handleMouseLeave(link)}
-                style={{ boxShadow: `0px 4px 0px ${boxShadowColors[link]}` }}
+               
+                
               >
                 {link.charAt(0).toUpperCase() + link.slice(1)}
               </Link>
@@ -63,9 +41,8 @@ function Navbar() {
             <li key={link}>
               <Link
                 to={`/${link}`}
-                onMouseEnter={() => handleMouseEnter(link)}
-                onMouseLeave={() => handleMouseLeave(link)}
-                style={{ boxShadow: `0px 4px 0px ${boxShadowColors[link]}` }}
+                
+                
               >
                 {link.charAt(0).toUpperCase() + link.slice(1)}
               </Link>

@@ -14,13 +14,13 @@
 }
 
 .cool {
-    width: 100%;
+    width: 80%;
     max-width: 500px;
     max-height: 100%;
     height: auto;
     margin-left: -50px;
     margin-top: 50px;
-    border-radius: 50%;
+    border-radius: 1000%;
     object-fit: cover;
 }
 

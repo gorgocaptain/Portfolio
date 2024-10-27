@@ -69,9 +69,7 @@ function Me() {
         <div className="card-wrapper" style={{ backgroundImage: `url(${Robotics})` }} onClick={() => handleClick("Mechanical Head", "Ok I’m not actually an engineer, in the sense that I do not have a degree in it. However, I am the head of mechanical engineering for my school’s robotics team. I have to use scientific principles to solve problems that my team’s robot could encounter. I also teach newer members how to use the machines in our shop and how to design and prototype. Our team participated in the 2024 FRC competition season. We ended up winning two sustainability awards.", Robotics)}>
           <h5>Engineer</h5>
         </div>
-        <div className="card-wrapper" style={{ backgroundImage: `url(${Picfive})` }} onClick={() => handleClick("Content for AP Student 3", "Detailed description of AP Student 3")}>
-          <h5>Developer</h5>
-        </div>
+        
       </div>
 
       {infoVisible && (

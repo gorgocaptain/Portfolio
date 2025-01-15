@@ -74,7 +74,7 @@ function Landing() {
      
       <div className="first">
         <div className="des-container fade-in">
-          <h1 className="main">George Florea</h1>
+          <h1 className="main">Hi, Welcome.</h1>
           <p id="des">I’m George. This is my website. Here you can find a portfolio of my tech projects, photos, and music. I developed these skills during high school and I’m very passionate about them!</p>
           <div className="des-container" id="icons">
           <a href="https://www.instagram.com/george_big_money1" target="_blank" ><AiOutlineInstagram /></a>

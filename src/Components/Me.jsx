@@ -4,7 +4,7 @@ import "./css/Photos.css";
 import "./css/Me.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Picfive from "../Images/Picfive.png";
+
 import Cool from "../Images/cool.jpg";
 import Guitar from "../Images/guitar.jpg";
 import Homeless from "../Images/homeless.jpg";
@@ -41,7 +41,6 @@ function Me() {
           <h1>Hi, I'm George.</h1>
           <p id="me-about">
           Hey! I’m really glad you made it to my about page—welcome! This is where I get to share the things I’m most passionate about. Whether it’s music, tech, or creative projects, I’m always driven to explore and push myself. Read on to learn more about me!
-
           </p>
         </div>
         <div>
@@ -58,16 +57,16 @@ function Me() {
         <div className="card-wrapper" style={{ backgroundImage: `url(${Studio})` }} onClick={() => handleClick("Music Producer", "Music is one of the most important aspects of my life. I first started producing in 2022 and I fell in love with it. From there, I’ve worked with different local Toronto artists and I am constantly working on my skills and creativity. One of the most important events was a demo tape I produced in June 2024. I sent out the beats to various studios in my area and managed to land an internship over the summer. Unfortunately I couldn't go due to personal circumstances, but this experience taught me a lot about networking and the music industry. I hope to one day achieve some major placements working with artists that I look up to. ", Studio)}>
           <h5>Producer</h5>
         </div>
-        <div className="card-wrapper" style={{ backgroundImage: `url(${Developer})` }} onClick={() => handleClick("Developer", "I remember the first time I was exposed to coding was from my older brother. He taught me python and he’d give me daily tasks to complete. One time he made me make a RPG battle using the console. It was very fun and this experience ignited a passion for programming. I now know over 5 languages and have worked with React and Unity.", Developer)}>
+        <div className="card-wrapper" style={{ backgroundImage: `url(${Developer})` }} onClick={() => handleClick("Developer", "I remember the first time I was exposed to coding was from my older brother. He taught me python and he’d give me daily tasks to complete. One time he made me make a RPG battle using the console. It was very fun and this experience ignited a passion for programming. I am proficient in 5 languages and have worked with React and Unity. I've applied the skills I've learned in coding competitions and hackathons.", Developer)}>
           <h5>Developer</h5>
         </div>
       </div>
       <div className="cards">
-        <div className="card-wrapper" style={{ backgroundImage: `url(${Guitar})` }} onClick={() => handleClick("Guitarist", "Playing guitar is a new passion for me. My older brother gave me his old classical guitar in August 2024 because he upgraded to an acoustic guitar. I’ve been learning a lot of songs that I like such as: Self Control - Frank Ocean, Come as you are - Nirvana and Wish you were here - Pink Floyd. I am always excited to learn new techniques and songs that I can play for my friends, family and myself.", Guitar)}>
+        <div className="card-wrapper" style={{ backgroundImage: `url(${Guitar})` }} onClick={() => handleClick("Guitarist", "My older brother gave me his old classical because he upgraded to an acoustic guitar. I’ve been learning a lot of songs that I like such as: Self Control - Frank Ocean, Dumb - Nirvana and Let Down - Radiohead. All of my skills are self taught, and I am always excited to learn new techniques and songs that I can play for my friends, family and myself. I also recently founded the guitar club at my school.", Guitar)}>
           <h5>Guitarist</h5>
         </div>
-        <div className="card-wrapper" style={{ backgroundImage: `url(${Robotics})` }} onClick={() => handleClick("Mechanical Head", "Ok I’m not actually an engineer, in the sense that I do not have a degree in it. However, I am the head of mechanical engineering for my school’s robotics team. I have to use scientific principles to solve problems that my team’s robot could encounter. I also teach newer members how to use the machines in our shop and how to design and prototype. Our team participated in the 2024 FRC competition season. We ended up winning two sustainability awards.", Robotics)}>
-          <h5>Engineer</h5>
+        <div className="card-wrapper" style={{ backgroundImage: `url(${Robotics})` }} onClick={() => handleClick("First Robotics Team 854", "I am the head of mechanical engineering for my school’s robotics team (The Iron Bears Team 854). I have to use scientific principles to solve problems that my team’s robot could encounter. I also teach newer members how to use the machines in our shop and how to design and prototype. Our team participated in the 2024 FRC competition season. We ended up winning two sustainability awards.", Robotics)}>
+          <h5>Team 854</h5>
         </div>
         
       </div>

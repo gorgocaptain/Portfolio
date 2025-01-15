@@ -32,7 +32,7 @@ function Navbar() {
         <div className="center-container">
           <li className="center-item">
             <Link to="/" id="lols" style={{ boxShadow: "none" }}>
-              <div className="top">George</div>
+              <div className="top">George Florea</div>
             </Link>
           </li>
         </div>

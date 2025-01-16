@@ -148,7 +148,7 @@ function Beats() {
     { name: "Lil Tecca Beat 2", image: Tecca2Image, audio: Tecca2},  
     { name: "Majestic Beat", image: MajesticImage, audio: Majestic},       
     { name: "Die Lit Beat", image: DieLitImage, audio: DieLit },
-    { name: "Hoodbyair type beat", image: HoodbyairImage, audio: Hoodbyair},  
+   
     { name: "Heros and Villains beat", image: HerosBeatImage, audio: HerosBeat},       
     { name: "Heartbreak", image: HeartbreakImage, audio: Heartbreak },
     { name: "Project 2", image: Project2Image, audio: Project2},  

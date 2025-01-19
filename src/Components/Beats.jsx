@@ -117,7 +117,7 @@ function Beats() {
   const beats = [
     { name: "Hari Type Beat", image: HariImage, audio: Hari},  
     { name: "Jeevan Type Beat", image: JeevanImage, audio: Jeevan},       
-    { name: "Ghosts", image: GhostsImage, audio: Ghosts},  
+
     { name: "Mr West", image: MrWestImage, audio: MrWest},       
     { name: "No Way", image: NoWayImage, audio: NoWay },
     { name: "BMB", image: GBMALBUMIMAGE, audio: BMB},  
